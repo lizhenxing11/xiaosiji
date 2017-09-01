@@ -1,0 +1,40 @@
+.TravelList {
+  background-color: white;
+}
+.TravelList .TravelListinner {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+}
+.TravelList .TravelListinner .traveitem {
+  margin-bottom: 0.7rem;
+}
+.TravelList .TravelListinner .top {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 0.32rem;
+}
+.TravelList .TravelListinner .top span {
+  color: #000;
+  margin: 0;
+}
+.TravelList .TravelListinner .top .icon-qiche {
+  color: #ff5e61;
+  font-size: 0.32rem;
+  margin-right: 0.24rem;
+}
+.TravelList .TravelListinner span {
+  font-size: 0.32rem;
+  color: #999999;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 0.56rem;
+  margin-top: 0.25rem;
+}
+.TravelList .TravelListinner .bottom {
+  display: flex;
+  flex-direction: row;
+}

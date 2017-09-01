@@ -1,0 +1,40 @@
+.personCenter .centerTop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background-size: cover;
+}
+.personCenter .centerTop img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0 auto;
+  border-radius: 50%;
+  padding: 0.5rem;
+  display: block;
+  box-sizing: content-box;
+}
+.personCenter .centerTop .userName {
+  color: white;
+  padding-bottom: 1.25rem;
+  font-size: 0.3rem;
+}
+.personCenter ol {
+  display: flex;
+  flex-direction: column;
+}
+.personCenter ol li {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.3rem;
+  background-color: white;
+  height: 0.9rem;
+  align-items: center;
+  font-weight: normal;
+}
+.personCenter ol li span,
+.personCenter ol li i {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 0.3rem;
+}

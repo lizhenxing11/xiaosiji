@@ -1,0 +1,30 @@
+{
+  "name": "xsjgx",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-scripts": "1.0.12"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "antd-mobile": "^1.6.5",
+    "axios": "^0.16.2",
+    "babel-plugin-import": "^1.4.0",
+    "bootstrap": "^3.3.7",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.5",
+    "postcss-pxtorem": "^4.0.1",
+    "react-bootstrap": "^0.31.2",
+    "react-redux": "^5.0.6",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "svg-sprite-loader": "^0.3.1"
+  }
+}

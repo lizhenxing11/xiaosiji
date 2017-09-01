@@ -1,0 +1,33 @@
+.driveover {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 90%;
+  margin: 0 auto;
+}
+.driveover p,
+.driveover span,
+.driveover h2 {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 0.5rem;
+}
+.driveover p,
+.driveover span {
+  font-size: 0.24rem;
+  color: #999999;
+}
+.driveover h2 {
+  font-size: 0.68rem  ;
+  font-weight: normal;
+}
+.driveover .driveDetail {
+  justify-content: center;
+  height: 0.9rem;
+  background-color: #cccccc;
+  border-radius: 0.5rem;
+  font-size: 0.32rem;
+  line-height: 0.9rem;
+  color: #000000;
+  margin-top: 1.5rem;
+}

@@ -1,0 +1,111 @@
+.Index {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  display: flex;
+}
+.Index .cover {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 2;
+  background-color: rgba(92, 108, 124, 0.5);
+}
+.Index .showCard {
+  z-index: 3;
+}
+.Index .bottom {
+  align-self: flex-end;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  width: 100%;
+}
+.Index .bottom .icon-geren:before {
+  font-size: 0.6rem;
+  color: #898989;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: #222222;
+}
+.Index .bottom .icon-tixing-copy:before {
+  font-size: 0.65rem;
+  color: #898989;
+  background-color: white;
+  border-radius: 50%;
+}
+.Index .bottom .btn {
+  width: 2.8rem;
+  height: 1rem;
+  background-color: #ff5e61;
+  border-radius: 50px;
+  line-height: 0.8rem;
+  color: white;
+  font-size: 0.28rem;
+}
+.popup-list .am-list-body {
+  height: 4.2rem;
+  overflow: auto;
+}
+.openCarCode {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.openCarCode .price {
+  margin-top: 0.25rem;
+  font-size: 0.3rem;
+}
+.openCarCode p {
+  margin-top: 0.25rem;
+  color: #999999;
+  justify-content: center;
+  display: flex;
+}
+.openCarCode span {
+  text-align: center;
+}
+.openCarCode input {
+  height: 0.9rem;
+  margin-top: 0.25rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  outline: none;
+  border: 1px solid #ff5e61;
+  border-radius: 0.5rem;
+  font-size: 0.3rem;
+}
+.openCarCode .OpenCarCodeBtn {
+  height: 0.9rem;
+  line-height: 0.9rem;
+  font-size: 0.3rem;
+  margin-top: 0.25rem;
+  background-color: #ff5e61;
+  color: white;
+  border-radius: 0.5rem;
+}
+.openCarCode .other {
+  margin-top: 0.25rem;
+  font-size: 0.24rem;
+  color: #999999;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.openCarCode .other .sao,
+.openCarCode .other .lighten {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.openCarCode .other .sao i,
+.openCarCode .other .lighten i {
+  display: flex;
+  justify-content: center;
+}

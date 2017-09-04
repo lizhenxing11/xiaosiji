@@ -1,5 +1,6 @@
 import React,{Component} from 'react'
 import '../Style/travelList.css'
+import axios from 'axios'
 
 class TravelList extends Component{
     constructor(props,context){
@@ -7,6 +8,15 @@ class TravelList extends Component{
         this.state={
             list:[{overTime:new Date(),carid:132123132132,totalPay:3.6,totalTime:14},{overTime:new Date(),carid:132123132132,totalPay:3.6,totalTime:14},{overTime:new Date(),carid:132123132132,totalPay:3.6,totalTime:14},{overTime:new Date(),carid:132123132132,totalPay:3.6,totalTime:14},{overTime:new Date(),carid:132123132132,totalPay:3.6,totalTime:14},]
         }
+    }
+    componentDidMount(){
+        axios({
+            url:'',
+            method:'post',
+            data:{id:this.props.location.query.orderID}
+        }).then((res)=>{
+            this.setState({total:res,overTime:res,carCode:res,totalTime:res})
+        })
     }
     render(){
         return(

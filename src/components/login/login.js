@@ -1,5 +1,6 @@
 import React,{Component} from 'react'
-import {FormGroup,InputGroup,Button,MenuItem,DropdownButton,FormControl} from 'react-bootstrap'
+import {FormGroup,InputGroup,MenuItem,DropdownButton,FormControl} from 'react-bootstrap'
+import { Modal } from 'antd-mobile'
 import {Link} from 'react-router-dom'
 import axios from 'axios'
 import '../../Style/login.css'
@@ -8,13 +9,15 @@ class Login extends Component{
     constructor (props,context) {
         super(...arguments);
         this.state = {
+            ID:'',
             telTitle:"+86",/*区号*/
             telNum:"",//手机号
             signCode:"",//验证码
             time:60,//计时器
             countdown:"获取验证码",//获取验证码按钮的value
             cover:'none',//覆盖层是否显示
-            err:'none'//校验表单
+            err:'none',//校验表单,
+            modal1:false //提示框
         }
         this.handleChange =(event)=>{
             //双向绑定数据
@@ -27,52 +30,87 @@ class Login extends Component{
         }
         this.getCode = () =>{
             if(/^1[34578]\d{9}$/.test(this.state.telNum)){
-                this.setState({cover:"block"})
-                var int = setInterval(()=> {
-                    if (this.state.time>0) {
-                        this.state.time--
-                        this.setState({countdown :this.state.time+  's后重新获取'});
-                    }else {
-                        clearInterval(int)
-                        this.setState({time: 60});
-                        this.setState({countdown: '获取验证码'});
-                        this.setState({cover:"none"})
-                    }
+                axios({
+                    method:'get',
+                    url:'/SmallCar/beforeLogin.action?phone='+ this.state.telNum +'&id='+ this.state.ID,
+                }).then((res)=>{
+                    if(!res.data.map) {
+                        this.setState({cover:"block"})
+                        var int = setInterval(() => {
+                            if (this.state.time > 0) {
+                                this.state.time--
+                                this.setState({countdown: this.state.time + 's后重新获取'});
+                            } else {
+                                clearInterval(int)
+                                this.setState({time: 60});
+                                this.setState({countdown: '获取验证码'});
+                                this.setState({cover: "none"})
+                            }
 
-                },1000)
+                        }, 1000)
+                    } else{
+                        this.setState({err:'flex'})
+                    }
+                }).catch((err)=>{
+
+                })
             }else {
                 this.setState({err:'flex'})
             }
 
         }
         this.confirm = (event) =>{
-
-            // this.context.router.history.push('/')
-
+            axios({
+                method:'get',
+                url:'SmallCar/doLogin.action?phone='+ this.state.telNum +'&chenk_code='+ this.state.signCode +'&id='+this.state.ID
+            }).then((res)=>{
+                if(!res.data.map){
+                    this.context.router.history.push('/index')
+                }else{
+                    this.setState({modal1:true})
+                }
+            })
         }
     }
+    onClose = key => () => {
+        this.setState({
+            [key]: false,
+        });
+    }
     componentWillMount(){
-        axios({
-            method:'get',
-            url:''
-        }).then((res)=>{
-            if(res.data.userPresence){
-               this.context.router.history.push('/index')
-            }
 
-        })
+        window.localStorage.removeItem('id')
+
+
+    }
+    componentDidMount(){
+        var str = window.location.href
+        var id = str.substring(str.indexOf('=')+1)
+        window.localStorage.setItem('id',id)
+        this.setState({ID:window.localStorage.id})
+
     }
     render () {
         return (
            <div className="login">
+               <Modal
+                   title="验证失败"
+                   transparent
+                   maskClosable={false}
+                   visible={this.state.modal1}
+                   onClose={this.onClose('modal1')}
+                   footer={[{ text: '确定', onPress: () => {this.onClose('modal1')(); } }]}
+               >
+                   手机号或验证码输入错误
+               </Modal>
                <h1>请输入您的手机号码</h1>
                <form className="sign">
                    <FormGroup>
                        <InputGroup>
                            <InputGroup.Button>
                                <DropdownButton bsStyle="default" title={this.state.telTitle} key="1" id="dropdown-basic" disabled={true}>
-                                   <MenuItem eventKey="1">Action</MenuItem>
-                                   <MenuItem eventKey="2">Another action</MenuItem>
+                                   <MenuItem eventKey="1">+86</MenuItem>
+                                   <MenuItem eventKey="2">+66</MenuItem>
                                    <MenuItem eventKey="3">Something else here</MenuItem>
                                    <MenuItem divider />
                                    <MenuItem eventKey="4">Separated link</MenuItem>
@@ -86,7 +124,7 @@ class Login extends Component{
                    <div className="signCode">
                        <div className="signCodeipt">
                            <span>验证码</span>
-                           <input type="text"  onChange={this.handleChangeSignCode} value={this.state.signCode} placeholder="请输入验证码"/>
+                           <input type="text"  onChange={this.handleChangeSignCode} value={this.state.signCode} placeholder="请输入验证码" maxLength='10'/>
                        </div>
                        <span id="getCode" onClick={this.getCode}>{this.state.countdown}</span>
                        <div className="cover" style={{display:this.state.cover}}></div>

@@ -5,7 +5,7 @@
   justify-content:center;
   display: flex;
   height: 10.24rem;
-  animation: Open 1s linear 2s infinite alternate;
+  animation: Open 1s linear 2s infinite;
 
   .content{
     padding: 0.2rem;
@@ -28,11 +28,11 @@
   }
 
   @keyframes Open {
-    0% {background-image: radial-gradient(circle, white 0, white 1rem,hsla(0,0,0,0) 1rem);}
+    0% {background-image: radial-gradient(circle, white 0, white 1rem,hsla(359,63%,63%,0.2) 1rem,hsla(359,63%,63%,0.2) 2rem,hsla(359,63%,63%,0.1) 2rem,hsla(359,63%,63%,0.1) 3rem,hsla(359,63%,63%,0.05) 3rem,hsla(359,63%,63%,0.05) 4rem,hsla(0,0,0,0) 4rem);}
     33% {
-      background-image: radial-gradient(circle, white 0, white 1rem,hsla(359,63%,63%,0.2) 1rem,hsla(359,63%,63%,0.2) 2rem,hsla(0,0,0,0) 2rem);
+      background-image: radial-gradient(circle, white 0, white 1rem,hsla(359,63%,63%,0.1) 1rem,hsla(359,63%,63%,0.1) 2rem,hsla(359,63%,63%,0.2) 2rem,hsla(359,63%,63%,0.2) 3rem,hsla(359,63%,63%,0.05) 3rem,hsla(359,63%,63%,0.05) 4rem,hsla(0,0,0,0) 4rem);
     }66% {
-      background-image: radial-gradient(circle, white 0, white 1rem,hsla(359,63%,63%,0.2) 1rem,hsla(359,63%,63%,0.2) 2rem,hsla(359,63%,63%,0.1) 2rem,hsla(359,63%,63%,0.1) 3rem,hsla(0,0,0,0) 3rem);
+           background-image: radial-gradient(circle, white 0, white 1rem,hsla(359,63%,63%,0.1) 1rem,hsla(359,63%,63%,0.1) 2rem,hsla(359,63%,63%,0.05) 2rem,hsla(359,63%,63%,0.05) 3rem,hsla(359,63%,63%,0.2) 3rem,hsla(359,63%,63%,0.2) 4rem,hsla(0,0,0,0) 4rem);
     }100% {
       background-image: radial-gradient(circle, white 0, white 1rem,hsla(359,63%,63%,0.2) 1rem,hsla(359,63%,63%,0.2) 2rem,hsla(359,63%,63%,0.1) 2rem,hsla(359,63%,63%,0.1) 3rem,hsla(359,63%,63%,0.05) 3rem,hsla(359,63%,63%,0.05) 4rem,hsla(0,0,0,0) 4rem);
     }

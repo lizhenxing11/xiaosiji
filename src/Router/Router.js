@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, BrowserRouter, Switch} from 'react-router-dom';
+import { Route, HashRouter, Switch} from 'react-router-dom';
 import login from '../components/login/login'
 import Index from '../components/index'
 import openCar from '../components/OpenCar'
@@ -12,7 +12,7 @@ import TraveList from '../components/travelList'
 class AppRouter extends React.Component{
     render() {
         return (
-            <BrowserRouter>
+            <HashRouter>
                 <Switch>
                     <Route path="/login"  component={login}></Route>
                     <Route path="/index"  component={Index}></Route>
@@ -22,7 +22,7 @@ class AppRouter extends React.Component{
                     <Route path="/driveover"  component={Driveover}></Route>
                     <Route path="/travelList"  component={TraveList}></Route>
                 </Switch>
-            </BrowserRouter>
+            </HashRouter>
         )
     }
 }

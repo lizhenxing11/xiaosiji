@@ -1,40 +1,59 @@
-.OpenCar{
+.open{
+  .OpenCar{
 
-  display: flex;
-  align-items: center;
-  justify-content:center;
-  display: flex;
-  height: 10.24rem;
-  animation: Open 1s linear 2s infinite;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    display: flex;
+    height: 9rem;
+    animation: Open 1s linear 2s infinite;
+    .content{
+      padding: 0.2rem;
+      border-radius: 50%;
+      width: 2rem;
+      height: 2rem;
+      display: block;
+      span{
+        font-size: 0.14rem;
+      }
+      i{
+        font-style: normal;
+        font-size: 0.28rem;
+      }
+      .icon-zhengque{
+        font-size: 0.4rem;
+        color: #07eb60;
+      }
 
-  .content{
-    padding: 0.2rem;
-    border-radius: 50%;
-    width: 2rem;
-    height: 2rem;
-    display: block;
-    span{
-      font-size: 0.14rem;
-    }
-    i{
-      font-style: normal;
-      font-size: 0.28rem;
-    }
-    .icon-zhengque{
-      font-size: 0.4rem;
-      color: #07eb60;
     }
 
+    @keyframes Open {
+      0% {background-image: radial-gradient(circle, white 0, white 1rem,hsla(359,63%,63%,0.2) 1rem,hsla(359,63%,63%,0.2) 2rem,hsla(359,63%,63%,0.1) 2rem,hsla(359,63%,63%,0.1) 3rem,hsla(359,63%,63%,0.05) 3rem,hsla(359,63%,63%,0.05) 4rem,hsla(0,0,0,0) 4rem);}
+      33% {
+        background-image: radial-gradient(circle, white 0, white 1rem,hsla(359,63%,63%,0.1) 1rem,hsla(359,63%,63%,0.1) 2rem,hsla(359,63%,63%,0.2) 2rem,hsla(359,63%,63%,0.2) 3rem,hsla(359,63%,63%,0.05) 3rem,hsla(359,63%,63%,0.05) 4rem,hsla(0,0,0,0) 4rem);
+      }66% {
+         background-image: radial-gradient(circle, white 0, white 1rem,hsla(359,63%,63%,0.1) 1rem,hsla(359,63%,63%,0.1) 2rem,hsla(359,63%,63%,0.05) 2rem,hsla(359,63%,63%,0.05) 3rem,hsla(359,63%,63%,0.2) 3rem,hsla(359,63%,63%,0.2) 4rem,hsla(0,0,0,0) 4rem);
+       }100% {
+          background-image: radial-gradient(circle, white 0, white 1rem,hsla(359,63%,63%,0.2) 1rem,hsla(359,63%,63%,0.2) 2rem,hsla(359,63%,63%,0.1) 2rem,hsla(359,63%,63%,0.1) 3rem,hsla(359,63%,63%,0.05) 3rem,hsla(359,63%,63%,0.05) 4rem,hsla(0,0,0,0) 4rem);
+        }
+    }
   }
-
-  @keyframes Open {
-    0% {background-image: radial-gradient(circle, white 0, white 1rem,hsla(359,63%,63%,0.2) 1rem,hsla(359,63%,63%,0.2) 2rem,hsla(359,63%,63%,0.1) 2rem,hsla(359,63%,63%,0.1) 3rem,hsla(359,63%,63%,0.05) 3rem,hsla(359,63%,63%,0.05) 4rem,hsla(0,0,0,0) 4rem);}
-    33% {
-      background-image: radial-gradient(circle, white 0, white 1rem,hsla(359,63%,63%,0.1) 1rem,hsla(359,63%,63%,0.1) 2rem,hsla(359,63%,63%,0.2) 2rem,hsla(359,63%,63%,0.2) 3rem,hsla(359,63%,63%,0.05) 3rem,hsla(359,63%,63%,0.05) 4rem,hsla(0,0,0,0) 4rem);
-    }66% {
-           background-image: radial-gradient(circle, white 0, white 1rem,hsla(359,63%,63%,0.1) 1rem,hsla(359,63%,63%,0.1) 2rem,hsla(359,63%,63%,0.05) 2rem,hsla(359,63%,63%,0.05) 3rem,hsla(359,63%,63%,0.2) 3rem,hsla(359,63%,63%,0.2) 4rem,hsla(0,0,0,0) 4rem);
-    }100% {
-      background-image: radial-gradient(circle, white 0, white 1rem,hsla(359,63%,63%,0.2) 1rem,hsla(359,63%,63%,0.2) 2rem,hsla(359,63%,63%,0.1) 2rem,hsla(359,63%,63%,0.1) 3rem,hsla(359,63%,63%,0.05) 3rem,hsla(359,63%,63%,0.05) 4rem,hsla(0,0,0,0) 4rem);
-    }
+  .OpenCarfooter{
+    font-size: 0.28rem;
+    color: #999999;
+    display: flex;
+    justify-content: center;
   }
+}
+.am-modal-title{
+  font-size: 0.3rem !important;
+}
+.am-modal-body, .am-modal-header{
+  padding:0 0.3rem 0.3rem !important;
+  font-size: 0.28rem !important;
+}
+.am-modal-button-group-v .am-modal-button{
+  line-height: 1rem !important;
+  height:1rem !important;
+  font-size: 0.28rem !important;
 }

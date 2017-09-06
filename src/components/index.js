@@ -22,7 +22,7 @@ class Index extends Component{
             modal1:false,
             show:'block',
             sel:'',
-            price:3,
+            price:0.35,
             cardCode:' '
         }
         this.show = () =>{
@@ -34,8 +34,18 @@ class Index extends Component{
             this.setState({cardCode:event.target.value})
 
         }
-        this.cao=()=>{
-            console.log(this.state.cardCode)
+        this.inputunlocking=()=>{
+            if(/^\d{6,11}$/.test(this.state.cardCode)){
+                this.state.cardCode
+                this.onClose('modal1')
+                this.context.router.history.push({
+                    pathname:'/openCar',
+                    query:{cardCode:this.state.cardCode}
+                });
+            }else{
+                alert('请输入正确的汽车编号')
+            }
+
         }
         this.enterPersonCenter=()=>{
             this.context.router.history.push('/PersonCenter')
@@ -62,6 +72,18 @@ class Index extends Component{
             window.localStorage.setItem('id',id)
         }
         this.setState({ID:window.localStorage.id})
+
+        //检查有没有未完成订单
+        // axios({
+        //     url:'',
+        //     method:'post',
+        //     data:{id:window.localStorage.id}
+        // }).then((res)=>{
+        //     this.context.router.history.push({
+        //         pathname:'/drivering',
+        //         query:{carid:res.data[0].carid,beginstamp:res.data[0].beginstamp,orderID:res.data[0].id}
+        //     })
+        // })
     }
     componentDidMount() {
         axios({
@@ -83,22 +105,12 @@ class Index extends Component{
 
         })
     }
-    onClick = () => {
+    onClick = () => {//输入车牌号解锁
         Popup.show(<div className="openCarCode">
-            <span className="price">计费说明: {this.state.price}元/分钟</span>
+            <span className="price">计费说明: 前十分钟3.5元,<br/>十分钟后{this.state.price}元/分钟</span>
             <p>输入车牌号,获取解锁码</p>
-            <input type="text" placeholder="输入车牌号" onInput={this.handleChange} />
-            <span className="OpenCarCodeBtn" onClick={this.cao}>立即用车</span>
-            <div className="other">
-                <div className="sao">
-                    <i className="iconfont icon-richscan_icon"></i>
-                    <span>扫码解锁</span>
-                </div>
-                <div className="lighten">
-                    <i className="iconfont icon-shoudiantongdianliang"></i>
-                    <span>手电筒</span>
-                </div>
-            </div>
+            <input type="text" placeholder="输入车牌号" onInput={this.handleChange} minLength='8'/>
+            <span className="OpenCarCodeBtn" onClick={this.inputunlocking}>立即用车</span>
         </div>, { animationType: 'slide-up', maskProps, maskClosable: false ,maskClosable:true});
     };
     onClose = (sel) => {
@@ -112,9 +124,15 @@ class Index extends Component{
                 <ShowCard show={this.show}></ShowCard>
                 <div className="cover" style={{display:this.state.show}}></div>
                 <div className="bottom">
-                    <i className="iconfont icon-geren" onClick={this.enterPersonCenter}></i>
+                    <div className="left" onClick={this.enterPersonCenter}>
+                        <img src={require('../img/person.png')} alt=""/>
+                        <span>个人中心</span>
+                    </div>
                     <span className="btn" onClick={this.unlocking}><i className="iconfont icon-richscan_icon"></i>  扫码开锁</span>
-                    <i className="iconfont icon-tixing-copy"></i>
+                    <div className="right" onClick={this.onClick}>
+                        <img src={require('../img/input.png')} alt=""/>
+                        <span>手动输入</span>
+                    </div>
                 </div>
             </div>
 

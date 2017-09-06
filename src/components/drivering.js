@@ -19,7 +19,8 @@ class Drivering extends Component{
             package:'',
             signType:'',
             paySign:'',
-            orderID:''
+            orderID:'',
+            BeginTime:''
         }
         this.confirm= ()=>{
             if(this.state.confirmevent ==="确认归还") {//确认归还
@@ -28,7 +29,7 @@ class Drivering extends Component{
                     url:'/SmallCar/closeCar.action',
                     data:{beginstamp:String(this.props.location.query.beginstamp),userid:this.state.ID,id:this.props.location.query.orderID,carid:this.props.location.query.carid,total:String(Number(new Date().getTime()-this.props.location.query.beginstamp))}
                 }).then((res)=>{
-                    this.setState({timestamp:res.data.timestamp,nonceStr:res.data.nonce_str,package:res.data.package,paySign:res.data.paySign,orderID:res.order})
+                    this.setState({timestamp:res.data.timestamp,nonceStr:res.data.nonce_str,package:res.data.package,paySign:res.data.paySign,orderID:res.data.order})
                     this.setState({over: true})
                     this.setState({time: this.state.total})
                     this.setState({title: '本次行驶需要支付费用(元)'})
@@ -37,12 +38,13 @@ class Drivering extends Component{
                     clearInterval(this.timeInterval)
                 }).catch((err)=>{
                     alert(err)
-                    alert(this.props.location.query.beginstamp)
                 })
             }else{//确认支付
+                let self = this
                 alert(this.state.timestamp)
-                alert(this.state.package)
                 alert(this.state.nonceStr)
+                alert(this.state.package)
+                alert(this.state.orderID)
                 alert(this.state.paySign)
                 window.wx.chooseWXPay({
                     appId:'wxa70554b5f2348936',
@@ -53,17 +55,24 @@ class Drivering extends Component{
                     paySign: this.state.paySign, // 支付签名
                     success: function (res) {
                         // 支付成功后的回调函数
-                        if(res.err_msg == "get_brand_wcpay_request：ok"){
-                            alert(res.msg)
-
+                        if(res.errMsg==='chooseWXPay:ok'){
+                            axios({
+                                url:'/SmallCar/payBack.action?id='+ self.state.ID +'&orderid='+self.state.orderID,
+                                method:'get'
+                            }).then((res)=>{
+                                alert(res.data[1])
+                                alert(res.data[0])
+                                if(res.data[0]){
+                                    self.context.router.history.push({
+                                        pathname: '/index',
+                                        query: {orderID: self.state.orderID}
+                                    })
+                                }
+                            }).catch((err)=>{
+                                alert(err)
+                            })
                         }else{
-                            alert(res.errMsg);
-                            alert(res.err_msg);
                         }
-                        this.context.router.history.push({
-                            pathname: '/driveover',
-                            query: {orderID: this.state.orderID}
-                        })
                     }
                 });
             }
@@ -74,21 +83,21 @@ class Drivering extends Component{
         clearInterval(this.timeInterval)//当组件销毁时停掉计时器
     }
     componentWillMount(){
-        const time = new Date().getTime()
         this.setState({ID:window.localStorage.id})
-        this.timeInterval= setInterval(()=>{//计时器  计算时间和总价
-            if(this.state.over){
-                clearInterval(this.timeInterval)
+                this.setState({BeginTime:new Date().getTime()})
 
-            }else{
-                this.setState({time:new Date(new Date().getTime()-time-28800000).Format('hh:mm:ss')})
-                console.log(((new Date().getTime()-time)/1000).toFixed(0)-60)
-                if((new Date().getTime()-time)/1000 >= 600){
-                    this.setState({total:Math.ceil((((new Date().getTime()-time)/1000).toFixed(0)-600)/60)*0.35+3.5})
+            this.timeInterval= setInterval(()=>{//计时器  计算时间和总价
+                if(this.state.over){
+                    clearInterval(this.timeInterval)
+
+                }else{
+                    this.setState({time:new Date(new Date().getTime()-this.state.BeginTime-28800000).Format('hh:mm:ss')})
+                    if((new Date().getTime()-this.state.BeginTime)/1000 >= 600){
+                        this.setState({total:Math.ceil((((new Date().getTime()-this.state.BeginTime)/1000).toFixed(0)-600)/60)*0.35+3.5})
+                    }
                 }
-            }
 
-        },1000)
+            },1000)
     }
     componentDidMount(){
         axios({//微信config
@@ -109,6 +118,20 @@ class Drivering extends Component{
         }).catch((err)=>{
 
         })
+        if(this.props.location.query.status===2){
+            this.setState({timestamp:this.props.location.query.timestamp,nonceStr:this.props.location.query.nonceStr,package:this.props.location.query.package,paySign:this.props.location.query.paySign,orderID:this.props.location.query.order,total:this.props.location.query.total})
+            this.setState({over: true})
+            this.setState({time: this.state.total})
+            this.setState({title: '本次行驶需要支付费用(元)'})
+            this.setState({confirmevent: '确认支付'})
+            clearInterval(this.totalInterval)
+            clearInterval(this.timeInterval)
+
+        }
+        if(this.props.location.query.status===1){
+            this.setState({BeginTime:this.props.location.query.beginstamp})
+
+        }
     }
     render(){
         let driveringBg = {backgroundImage:`url(${Bg})`}

@@ -36,16 +36,9 @@ class Drivering extends Component{
                     this.setState({confirmevent: '确认支付'})
                     clearInterval(this.totalInterval)
                     clearInterval(this.timeInterval)
-                }).catch((err)=>{
-                    alert(err)
                 })
             }else{//确认支付
                 let self = this
-                alert(this.state.timestamp)
-                alert(this.state.nonceStr)
-                alert(this.state.package)
-                alert(this.state.orderID)
-                alert(this.state.paySign)
                 window.wx.chooseWXPay({
                     appId:'wxa70554b5f2348936',
                     timestamp: Number(this.state.timestamp), // 支付签名时间戳，注意微信jssdk中的所有使用timestamp字段均为小写。但最新版的支付后台生成签名使用的timeStamp字段名需大写其中的S字符
@@ -60,8 +53,6 @@ class Drivering extends Component{
                                 url:'/SmallCar/payBack.action?id='+ self.state.ID +'&orderid='+self.state.orderID,
                                 method:'get'
                             }).then((res)=>{
-                                alert(res.data[1])
-                                alert(res.data[0])
                                 if(res.data[0]){
                                     self.context.router.history.push({
                                         pathname: '/index',
@@ -69,7 +60,8 @@ class Drivering extends Component{
                                     })
                                 }
                             }).catch((err)=>{
-                                alert(err)
+                                alert(err.url)
+                                alert('系统出现问题导致不能付款,请联系管理员,否则会导致后续不能用车')
                             })
                         }else{
                         }
@@ -110,7 +102,7 @@ class Drivering extends Component{
                 appId: 'wxa70554b5f2348936', // 必填，公众号的唯一标识
                 timestamp: Number(res.data.timestamp), // 必填，生成签名的时间戳
                 nonceStr: res.data.noncestr, // 必填，生成签名的随机串
-                debug: true, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+                debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
                 signature: res.data.signature,// 必填，签名，见附录1
                 jsApiList: ['scanQRCode','chooseWXPay','chooseImage'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
             });
@@ -119,7 +111,7 @@ class Drivering extends Component{
 
         })
         if(this.props.location.query.status===2){
-            this.setState({timestamp:this.props.location.query.timestamp,nonceStr:this.props.location.query.nonceStr,package:this.props.location.query.package,paySign:this.props.location.query.paySign,orderID:this.props.location.query.order,total:this.props.location.query.total})
+            this.setState({timestamp:this.props.location.query.timestamp,nonceStr:this.props.location.query.nonceStr,package:this.props.location.query.package,paySign:this.props.location.query.paySign,orderID:this.props.location.query.orderID})
             this.setState({over: true})
             this.setState({time: this.state.total})
             this.setState({title: '本次行驶需要支付费用(元)'})

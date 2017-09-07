@@ -2,17 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8737602c-c481-4ebd-a61c-a91476212064" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/Indexbg.jpg" afterPath="$PROJECT_DIR$/src/img/Indexbg.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Style/OpenCar.css" afterPath="$PROJECT_DIR$/src/Style/OpenCar.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Style/OpenCar.less" afterPath="$PROJECT_DIR$/src/Style/OpenCar.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Style/index.css" afterPath="$PROJECT_DIR$/src/Style/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Style/index.less" afterPath="$PROJECT_DIR$/src/Style/index.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Style/login.css" afterPath="$PROJECT_DIR$/src/Style/login.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Style/login.less" afterPath="$PROJECT_DIR$/src/Style/login.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Style/travelList.css" afterPath="$PROJECT_DIR$/src/Style/travelList.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Style/travelList.less" afterPath="$PROJECT_DIR$/src/Style/travelList.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/OpenCar.js" afterPath="$PROJECT_DIR$/src/components/OpenCar.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/drivering.js" afterPath="$PROJECT_DIR$/src/components/drivering.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/index.js" afterPath="$PROJECT_DIR$/src/components/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/personCenter.js" afterPath="$PROJECT_DIR$/src/components/personCenter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/showCard.js" afterPath="$PROJECT_DIR$/src/components/showCard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/travelList.js" afterPath="$PROJECT_DIR$/src/components/travelList.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,8 +28,8 @@
       <file leaf-file-name="OpenCar.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/OpenCar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2430">
-              <caret line="93" column="52" lean-forward="false" selection-start-line="93" selection-start-column="52" selection-end-line="93" selection-end-column="52" />
+            <state relative-caret-position="27">
+              <caret line="76" column="128" lean-forward="false" selection-start-line="76" selection-start-column="128" selection-end-line="76" selection-end-column="128" />
               <folding />
             </state>
           </provider>
@@ -39,8 +38,74 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="7" column="64" lean-forward="false" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
+            <state relative-caret-position="1215">
+              <caret line="93" column="193" lean-forward="false" selection-start-line="93" selection-start-column="193" selection-end-line="93" selection-end-column="193" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="showCard.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/showCard.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-594">
+              <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="personCenter.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/personCenter.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-722">
+              <caret line="14" column="46" lean-forward="false" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="travelList.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Style/travelList.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="travelList.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/travelList.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="49" column="79" lean-forward="false" selection-start-line="49" selection-start-column="79" selection-end-line="49" selection-end-column="79" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Router.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Router/Router.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="22" column="44" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -49,8 +114,8 @@
       <file leaf-file-name="drivering.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/drivering.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="58" column="35" lean-forward="true" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
+            <state relative-caret-position="410">
+              <caret line="62" column="46" lean-forward="false" selection-start-line="62" selection-start-column="45" selection-end-line="62" selection-end-column="46" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -70,10 +135,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>css</find>
-      <find>babel</find>
-      <find>webpack.config.prod</find>
-      <find>antd</find>
       <find>webpack.con</find>
       <find>https</find>
       <find>http</find>
@@ -81,7 +142,6 @@
       <find>registerValidSW</find>
       <find>ush</find>
       <find>confirm</find>
-      <find>map</find>
       <find>carid</find>
       <find>orderID</find>
       <find>.order</find>
@@ -100,6 +160,11 @@
       <find>am-modal-button-group-v</find>
       <find>modal1</find>
       <find>alert</find>
+      <find>map</find>
+      <find>icon-qiche</find>
+      <find>new Date()</find>
+      <find>index</find>
+      <find>show</find>
     </findStrings>
     <replaceStrings>
       <replace>http://img2.3lian.com/img2007/24/03/015.jpg</replace>
@@ -121,35 +186,35 @@
         <option value="$PROJECT_DIR$/src/Style/personCenter.js" />
         <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/index.css" />
-        <option value="$PROJECT_DIR$/src/components/personCenter.js" />
         <option value="$PROJECT_DIR$/src/Style/personCenter.less" />
         <option value="$PROJECT_DIR$/src/Style/drivering.less" />
         <option value="$PROJECT_DIR$/src/Style/driveover.less" />
         <option value="$PROJECT_DIR$/src/components/travel.js" />
-        <option value="$PROJECT_DIR$/src/Style/travelList.less" />
         <option value="D:/工具包/nginx-1.10.2/conf/nginx.conf" />
         <option value="D:/工具包/nginx-1.13.4/conf/nginx.conf" />
         <option value="D:/nginx-1.13.4/conf/nginx.conf" />
-        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/node_modules/react-scripts/config/webpack.config.dev.js" />
         <option value="$PROJECT_DIR$/node_modules/react-scripts/config/webpack.config.prod.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/Router/Router.js" />
         <option value="$PROJECT_DIR$/build/index.html" />
         <option value="$PROJECT_DIR$/src/Style/showCard.less" />
-        <option value="$PROJECT_DIR$/src/components/showCard.js" />
         <option value="$USER_HOME$/Desktop/index.html" />
         <option value="$PROJECT_DIR$/src/components/login/login.js" />
         <option value="$PROJECT_DIR$/src/components/driveover.js" />
-        <option value="$PROJECT_DIR$/src/components/travelList.js" />
         <option value="$PROJECT_DIR$/src/Style/login.less" />
         <option value="$USER_HOME$/Documents/WeChat Files/hx962464lzx/Files/新建文本文档(1).txt" />
         <option value="$PROJECT_DIR$/src/Style/index.less" />
-        <option value="$PROJECT_DIR$/src/components/index.js" />
         <option value="$PROJECT_DIR$/build/static/css/main.63e394d8.css" />
         <option value="$PROJECT_DIR$/src/Style/OpenCar.less" />
         <option value="$PROJECT_DIR$/build/static/css/main.d00b7273.css" />
+        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/components/OpenCar.js" />
+        <option value="$PROJECT_DIR$/src/components/showCard.js" />
+        <option value="$PROJECT_DIR$/src/components/personCenter.js" />
+        <option value="$PROJECT_DIR$/src/components/travelList.js" />
+        <option value="$PROJECT_DIR$/src/Style/travelList.less" />
+        <option value="$PROJECT_DIR$/src/components/index.js" />
         <option value="$PROJECT_DIR$/src/components/drivering.js" />
       </list>
     </option>
@@ -172,7 +237,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -194,7 +259,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -240,6 +305,12 @@
               <item name="xsjgx" type="b2602c69:ProjectViewProjectNode" />
               <item name="xsjgx" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Router" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xsjgx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xsjgx" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Style" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -260,7 +331,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -311,23 +382,25 @@
       <workItem from="1504689645712" duration="1110000" />
       <workItem from="1504692719231" duration="6214000" />
       <workItem from="1504700246710" duration="7000" />
+      <workItem from="1504746834544" duration="25243000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="259543000" />
+    <option name="totallyTimeSpent" value="284786000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16649048" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11892178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32579187" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30429864" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28393665" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -354,11 +427,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/Router/Router.js</url>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/personCenter.js</url>
-          <line>48</line>
-          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="5" />
@@ -407,23 +475,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Style/personCenter.js" />
-    <entry file="file://$PROJECT_DIR$/src/components/personCenter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="42" lean-forward="false" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Style/travelList.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/工具包/nginx-1.10.2/conf/fastcgi.conf" />
     <entry file="file://D:/工具包/nginx-1.10.2/conf/nginx.conf" />
     <entry file="file://D:/工具包/nginx-1.13.4/conf/nginx.conf" />
@@ -523,13 +574,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/showCard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -551,32 +595,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Router/Router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="20" column="43" lean-forward="false" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Documents/WeChat Files/hx962464lzx/Files/新建文本文档(1).txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1132">
           <caret line="78" column="72" lean-forward="false" selection-start-line="78" selection-start-column="72" selection-end-line="78" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="25" column="33" lean-forward="false" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/travelList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -631,26 +653,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/index.js">
+    <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="7" column="64" lean-forward="false" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
+        <state relative-caret-position="189">
+          <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Router/Router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="22" column="44" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/personCenter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-722">
+          <caret line="14" column="46" lean-forward="false" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/travelList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="49" column="79" lean-forward="false" selection-start-line="49" selection-start-column="79" selection-end-line="49" selection-end-column="79" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Style/travelList.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/OpenCar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2430">
-          <caret line="93" column="52" lean-forward="false" selection-start-line="93" selection-start-column="52" selection-end-line="93" selection-end-column="52" />
+        <state relative-caret-position="27">
+          <caret line="76" column="128" lean-forward="false" selection-start-line="76" selection-start-column="128" selection-end-line="76" selection-end-column="128" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1215">
+          <caret line="93" column="193" lean-forward="false" selection-start-line="93" selection-start-column="193" selection-end-line="93" selection-end-column="193" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/showCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-594">
+          <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/drivering.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="58" column="35" lean-forward="true" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
+        <state relative-caret-position="410">
+          <caret line="62" column="46" lean-forward="false" selection-start-line="62" selection-start-column="45" selection-end-line="62" selection-end-column="46" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>

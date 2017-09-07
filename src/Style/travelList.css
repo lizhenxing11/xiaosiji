@@ -1,40 +1,77 @@
 .TravelList {
   background-color: white;
+  height: 100%;
 }
 .TravelList .TravelListinner {
-  padding-top: 0.3rem;
   padding-bottom: 0.3rem;
   display: flex;
   flex-direction: column;
   width: 90%;
   margin: 0 auto;
 }
-.TravelList .TravelListinner .traveitem {
-  margin-bottom: 0.7rem;
-}
-.TravelList .TravelListinner .top {
+.TravelList .TravelListinner .null {
+  font-size: 0.32rem;
+  color: #999999;
+  margin-top: 2rem;
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+.TravelList .TravelListinner .null p {
   font-size: 0.32rem;
 }
-.TravelList .TravelListinner .top span {
-  color: #000;
-  margin: 0;
+.TravelList .TravelListinner .null button {
+  border: none;
+  background-color: #ff5e61;
+  color: white;
+  border-radius: 1rem;
+  height: 0.9rem;
+  width: 3rem;
 }
-.TravelList .TravelListinner .top .icon-qiche {
+.TravelList .TravelListinner .traveitem {
+  margin-top: 0.35rem;
+  display: flex;
+  flex-direction: row;
+}
+.TravelList .TravelListinner .traveitem .icon-qiche {
   color: #ff5e61;
   font-size: 0.32rem;
   margin-right: 0.24rem;
 }
-.TravelList .TravelListinner span {
+.TravelList .TravelListinner .traveitem .bottom {
+  flex: 50;
+  border-bottom: 1px dashed #cccccc;
+  padding-bottom: 0.35rem;
+}
+.TravelList .TravelListinner .traveitem .bottom .top {
+  display: flex;
+  justify-content: flex-start;
   font-size: 0.32rem;
+}
+.TravelList .TravelListinner .traveitem .bottom .top span {
+  color: #000;
+  margin: 0;
+  font-size: 0.3rem;
+}
+.TravelList .TravelListinner .traveitem .bottom span {
+  font-size: 0.24rem;
   color: #999999;
   display: flex;
   justify-content: flex-start;
-  margin-left: 0.56rem;
   margin-top: 0.25rem;
 }
-.TravelList .TravelListinner .bottom {
+.TravelList .TravelListinner .traveitem .bottom .bottom {
+  border: none;
   display: flex;
   flex-direction: row;
+  padding-bottom: 0;
+}
+.TravelList .TravelListinner .traveitem .bottom .bottom span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 0.2rem;
+}
+.TravelList .TravelListinner .traveitem .bottom .bottom .iconfont:before {
+  margin-right: 0.1rem;
 }

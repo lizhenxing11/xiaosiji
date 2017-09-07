@@ -71,8 +71,37 @@ class OpenCar extends Component{
                     }
 
                 })
-            }else{
-                alert('fuck you')
+            }
+            if(this.props.location.query.cardCode){//输入车辆编码开锁
+                axios({//开锁
+                    url:'/SmallCar/openCarBynum.action?id='+this.state.ID+'&carcode='+String(this.props.location.query.cardCode),
+                    method:'get'
+                }).then((res)=>{
+                    if(res.data[0]){//开锁成功
+                        clearInterval(this.time)
+                        this.newtime=  setInterval(()=>{
+                            if(this.state.progressCode<100){
+                                let num = this.state.progressCode+1
+                                this.setState({progressCode:num})
+                            }else{
+                                this.setState({progressCode:'',icon:'iconfont icon-zhengque',sign:'',state:'开锁成功'})
+                                clearInterval(this.newtime)
+                            }
+                        },10)
+                        this.setState({orderID:res.data[0].id})
+
+                        this.setState({carid:res.data[0].carid})
+                        this.setState({beginstamp:res.data[0].beginstamp})
+                    }else{//开锁失败
+                        this.times = setInterval(()=>{
+                            if(!this.state.progressCode<100){
+                                this.setState({modal1:true})//提示失败
+                                clearInterval(this.times)
+                            }
+                        },1000)
+                    }
+
+                })
             }
 
         },2000)

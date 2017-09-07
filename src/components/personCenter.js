@@ -7,27 +7,29 @@ class PersonCenter extends Component{
     constructor(props,context){
         super(...arguments);
         this.state={
-
+            headImg:'',
+            nickName:'',
+            telNum:''
         }
         this.enterMarch=()=>{
-            this.context.router.history.push('./login')
+            this.context.router.history.push('/travelList')
         }
     }
     componentWillMount(){
-        // axios({
-        //     method:'get',
-        //     url:'https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wxa70554b5f2348936&secret=75b941805a0a57c2d57d0a6e10d05713'
-        // }).then((res)=>{
-        //     console.log(res.data)
-        // })
+        axios({
+            method:'get',
+            url:'/SmallCar/mySelf.action?id='+window.localStorage.id
+        }).then((res)=>{
+            this.setState({headImg:res.data.map.headimgurl,nickName:res.data.map.nickname,telNum:res.data.map.phone})
+        })
     }
     render() {
         var CenterBg = {backgroundImage:`url(${Bg})`}
         return(
             <div className="personCenter">
                 <div className="centerTop" style={CenterBg}>
-                    <img src='http://img0.imgtn.bdimg.com/it/u=602288768,1056696022&fm=26&gp=0.jpg' alt=""/>
-                    <span className="userName">用户昵称</span>
+                    <img src={this.state.headImg} alt=""/>
+                    <span className="userName">{this.state.nickName}</span>
                 </div>
                 <ol>
                     <li onClick={this.enterMarch}>
@@ -36,11 +38,11 @@ class PersonCenter extends Component{
                     </li>
                     <li>
                         <span>手机号</span>
-                        <span>13273395992</span>
+                        <span>{this.state.telNum}</span>
                     </li>
                     <li>
                         <span>微信昵称</span>
-                        <span>童享科技</span>
+                        <span>{this.state.nickName}</span>
                     </li>
                 </ol>
 

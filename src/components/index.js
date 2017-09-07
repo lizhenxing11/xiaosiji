@@ -70,20 +70,31 @@ class Index extends Component{
         if(str.indexOf('=')!==-1){
             var id = str.substring(str.indexOf('=')+1)
             window.localStorage.setItem('id',id)
+            this.setState({show:'block'})
+        }
+        if(window.localStorage.id){
+            this.setState({show:'none'})
         }
         this.setState({ID:window.localStorage.id})
 
         //检查有没有未完成订单
-        // axios({
-        //     url:'',
-        //     method:'post',
-        //     data:{id:window.localStorage.id}
-        // }).then((res)=>{
-        //     this.context.router.history.push({
-        //         pathname:'/drivering',
-        //         query:{carid:res.data[0].carid,beginstamp:res.data[0].beginstamp,orderID:res.data[0].id}
-        //     })
-        // })
+        axios({
+            url:'/SmallCar/notReturnOrPay.action?id='+window.localStorage.id,
+            method:'get'
+        }).then((res)=>{
+            if(res.data.notreturn){
+                this.context.router.history.push({
+                    pathname:'/drivering',
+                    query:{carid:res.data.notreturn.carid,beginstamp:res.data.notreturn.beginstamp,orderID:res.data.notreturn.id,status:1}
+                })
+            }
+            if(res.data.sign){
+                this.context.router.history.push({
+                    pathname:'/drivering',
+                    query:{timestamp:res.data.sign.timestamp,nonceStr:res.data.sign.noncestr,package:res.data.sign.package1,paySign:res.data.sign.paysign,orderID:res.data.sign.orderid,status:2}
+                })
+            }
+        })
     }
     componentDidMount() {
         axios({
@@ -91,7 +102,6 @@ class Index extends Component{
             url:'/SmallCar/sign.action',
             params:{url:window.location.href.split('#')[0]}
         }).then((res)=>{
-            localStorage.setItem('userID',res.data.ID)
             window.wx.config({
                 appId: 'wxa70554b5f2348936', // 必填，公众号的唯一标识
                 timestamp: Number(res.data.timestamp), // 必填，生成签名的时间戳
@@ -111,7 +121,7 @@ class Index extends Component{
             <p>输入车牌号,获取解锁码</p>
             <input type="text" placeholder="输入车牌号" onInput={this.handleChange} minLength='8'/>
             <span className="OpenCarCodeBtn" onClick={this.inputunlocking}>立即用车</span>
-        </div>, { animationType: 'slide-up', maskProps, maskClosable: false ,maskClosable:true});
+        </div>, { animationType: 'slide-up', maskClosable:true});
     };
     onClose = (sel) => {
         this.setState({ sel });
@@ -121,7 +131,7 @@ class Index extends Component{
         var IdnexBg = {backgroundImage:`url(${Bg})` }
         return (
             <div className="Index" style={IdnexBg}>
-                <ShowCard show={this.show}></ShowCard>
+                <ShowCard show={this.show} showState={this.state.show}></ShowCard>
                 <div className="cover" style={{display:this.state.show}}></div>
                 <div className="bottom">
                     <div className="left" onClick={this.enterPersonCenter}>

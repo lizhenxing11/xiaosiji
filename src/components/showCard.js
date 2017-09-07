@@ -8,7 +8,7 @@ class ShowCard extends Component{
         this.state = {
             initialHeight:200,
             data:[{img:'http://img2.3lian.com/img2007/24/03/015.jpg',title:'一键扫码,快速开锁',main:'在小司机玩具车的车头都印有二维码，只需要用手机扫码，车锁会自动打开'}],
-            show:'block'
+            show:this.props.showState
         }
         this.closeCard = ()=>{
             this.setState({show:'none'})

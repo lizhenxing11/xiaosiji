@@ -1,41 +1,78 @@
-.TravelList{
+.TravelList {
   background-color: white;
-  .TravelListinner{
-    padding-top: 0.3rem;
+  height: 100%;
+  .TravelListinner {
     padding-bottom: 0.3rem;
     display: flex;
     flex-direction: column;
     width: 90%;
     margin: 0 auto;
-    .traveitem{
-      margin-bottom: 0.7rem;
-    }
-    .top{
-      display: flex;
-      justify-content: flex-start;
+    .null{
       font-size: 0.32rem;
-      span{
-        color: #000;
-        margin:0;
+      color: #999999;
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      p{
+        font-size: 0.32rem;
       }
-
-      .icon-qiche{
-        color:#ff5e61;
+      button{
+        border:none;
+        background-color: #ff5e61;
+        color: white;
+        border-radius: 1rem;
+        height:0.9rem;
+        width: 3rem;
+      }
+    }
+    .traveitem {
+      margin-top: 0.35rem;
+      display: flex;
+      flex-direction: row;
+      .icon-qiche {
+        color: #ff5e61;
         font-size: 0.32rem;
         margin-right: 0.24rem;
       }
-    }
-    span{
-      font-size: 0.32rem;
-      color: #999999;
-      display: flex;
-      justify-content: flex-start;
-      margin-left: 0.56rem;
-      margin-top: 0.25rem;
-    }
-    .bottom{
-      display: flex;
-      flex-direction: row;
+      .bottom {
+        flex: 50;
+        border-bottom: 1px dashed #cccccc;
+        padding-bottom: 0.35rem;
+        .top {
+          display: flex;
+          justify-content: flex-start;
+          font-size: 0.32rem;
+          span {
+            color: #000;
+            margin: 0;
+            font-size: 0.3rem;
+          }
+
+        }
+        span {
+          font-size: 0.24rem;
+          color: #999999;
+          display: flex;
+          justify-content: flex-start;
+          margin-top: 0.25rem;
+        }
+        .bottom {
+          border:none;
+          display: flex;
+          flex-direction: row;
+          padding-bottom: 0;
+          span{
+            display: flex;
+            align-items: center;
+            justify-content:space-between;
+            margin-right: 0.2rem;
+          }
+          .iconfont:before {
+            margin-right: 0.1rem;
+          }
+        }
+      }
     }
   }
 }

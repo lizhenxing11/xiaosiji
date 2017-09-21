@@ -4,7 +4,7 @@ import '../Style/index.css'
 import Bg from '../img/Indexbg.jpg'
 import { Popup } from 'antd-mobile';
 import axios from 'axios'
-
+    
 const isIPhone = new RegExp('\\biPhone\\b|\\biPod\\b', 'i').test(window.navigator.userAgent);
 let maskProps;
 if (isIPhone) {
@@ -63,17 +63,26 @@ class Index extends Component{
                 }
             });
         }
-
+        this.closewindow=(event)=>{
+            if (event.state) {
+                //侦测是用户触发的后退操作, dosomething
+                //这里刷新当前url
+                window.wx.closeWindow();
+            }
+        }
+        this.addtag=()=>{
+            window.history.replaceState('hasHash', '', '');
+        }
     }
     componentWillMount(){
+        if(window.localStorage.id){
+            this.setState({show:'none'})
+        }
         var str = window.location.href
         if(str.indexOf('=')!==-1){
             var id = str.substring(str.indexOf('=')+1)
             window.localStorage.setItem('id',id)
             this.setState({show:'block'})
-        }
-        if(window.localStorage.id){
-            this.setState({show:'none'})
         }
         this.setState({ID:window.localStorage.id})
 
@@ -91,7 +100,7 @@ class Index extends Component{
             if(res.data.sign){
                 this.context.router.history.push({
                     pathname:'/drivering',
-                    query:{timestamp:res.data.sign.timestamp,nonceStr:res.data.sign.noncestr,package:res.data.sign.package1,paySign:res.data.sign.paysign,orderID:res.data.sign.orderid,status:2}
+                    query:{timestamp:res.data.sign.timestamp,nonceStr:res.data.sign.noncestr,package:res.data.sign.package1,paySign:res.data.sign.paysign,orderID:res.data.sign.orderid,status:2,orderPay:res.data.amount}
                 })
             }
         })

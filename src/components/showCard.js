@@ -7,7 +7,7 @@ class ShowCard extends Component{
         super(...arguments);
         this.state = {
             initialHeight:200,
-            data:[{img:'http://img2.3lian.com/img2007/24/03/015.jpg',title:'一键扫码,快速开锁',main:'在小司机玩具车的车头都印有二维码，只需要用手机扫码，车锁会自动打开'}],
+            data:[{img:require('../img/pic2.jpg'),title:'一键扫码,快速开锁',main:'在小司机玩具车的车头都印有二维码',main2:'只需要用手机扫码，车锁会自动打开'},{img:require('../img/pic1.jpg'),title:'拔电使用,充电结束',main:'请在电源处拔电后开始用车',main2:'确认小车已充电后结束用车'}],
             show:this.props.showState
         }
         this.closeCard = ()=>{
@@ -41,7 +41,8 @@ class ShowCard extends Component{
                                     }}
                                 />
                                 <h2>{ii.title}</h2>
-                                <p>{ii.main}</p>
+                                <p className="main">{ii.main}</p>
+                                <p>{ii.main2}</p>
                             </div>
                         ))}
                     </Carousel>

@@ -11,7 +11,7 @@ class Drivering extends Component{
             ID:'',
             title:'行驶时间',
             time:'00:00:00',
-            total:3.5,
+            total:3.50,
             over:false,
             confirmevent:'确认归还',
             timestamp:'',
@@ -29,12 +29,15 @@ class Drivering extends Component{
                     url:'/SmallCar/closeCar.action',
                     data:{beginstamp:String(this.props.location.query.beginstamp),userid:this.state.ID,id:this.props.location.query.orderID,carid:this.props.location.query.carid,total:String(Number(new Date().getTime()-this.props.location.query.beginstamp))}
                 }).then((res)=>{
-                    this.setState({timestamp:res.data.timestamp,nonceStr:res.data.nonce_str,package:res.data.package,paySign:res.data.paySign,orderID:res.data.order})
-                    this.setState({over: true})
-                    this.setState({time: this.state.total})
-                    this.setState({title: '本次行驶需要支付费用(元)'})
-                    this.setState({confirmevent: '确认支付'})
-                    clearInterval(this.totalInterval)
+                    if(res.data.msg === 'free'){
+                        this.context.router.history.push('/index')
+                    }else{
+                        this.setState({timestamp:res.data.timestamp,nonceStr:res.data.nonce_str,package:res.data.package,paySign:res.data.paySign,orderID:res.data.order})
+                        this.setState({over: true})
+                        this.setState({time: this.state.total.toFixed(2)})
+                        this.setState({title: '本次行驶需要支付费用(元)'})
+                        this.setState({confirmevent: '确认支付'})
+                    }
                     clearInterval(this.timeInterval)
                 })
             }else{//确认支付
@@ -60,7 +63,6 @@ class Drivering extends Component{
                                     })
                                 }
                             }).catch((err)=>{
-                                alert(err.url)
                                 alert('系统出现问题导致不能付款,请联系管理员,否则会导致后续不能用车')
                             })
                         }else{
@@ -83,10 +85,15 @@ class Drivering extends Component{
                     clearInterval(this.timeInterval)
 
                 }else{
-                    this.setState({time:new Date(new Date().getTime()-this.state.BeginTime-28800000).Format('hh:mm:ss')})
-                    if((new Date().getTime()-this.state.BeginTime)/1000 >= 600){
-                        this.setState({total:Math.ceil((((new Date().getTime()-this.state.BeginTime)/1000).toFixed(0)-600)/60)*0.35+3.5})
+                    if(new Date().getTime()-this.state.BeginTime > 0 ){
+                        this.setState({time:new Date(new Date().getTime()-this.state.BeginTime-28800000).Format('hh:mm:ss')})
+                        if((new Date().getTime()-this.state.BeginTime)/1000 >= 600){
+                            this.setState({total:Math.ceil((((new Date().getTime()-this.state.BeginTime)/1000).toFixed(0)-600)/60)*0.35+3.5})
+                        }
+                    }else{
+                        this.setState({time:'00:00:00',total:0})
                     }
+
                 }
 
             },1000)
@@ -111,17 +118,15 @@ class Drivering extends Component{
 
         })
         if(this.props.location.query.status===2){
-            this.setState({timestamp:this.props.location.query.timestamp,nonceStr:this.props.location.query.nonceStr,package:this.props.location.query.package,paySign:this.props.location.query.paySign,orderID:this.props.location.query.orderID})
+            this.setState({timestamp:this.props.location.query.timestamp,nonceStr:this.props.location.query.nonceStr,package:this.props.location.query.package,paySign:this.props.location.query.paySign,orderID:this.props.location.query.orderID,total:Number(this.props.location.query.orderPay),time:Number(this.props.location.query.orderPay).toFixed(2)})
             this.setState({over: true})
-            this.setState({time: this.state.total})
             this.setState({title: '本次行驶需要支付费用(元)'})
             this.setState({confirmevent: '确认支付'})
-            clearInterval(this.totalInterval)
             clearInterval(this.timeInterval)
 
         }
         if(this.props.location.query.status===1){
-            this.setState({BeginTime:this.props.location.query.beginstamp})
+            this.setState({BeginTime:Number(this.props.location.query.beginstamp)+60000})
 
         }
     }
@@ -129,8 +134,9 @@ class Drivering extends Component{
         let driveringBg = {backgroundImage:`url(${Bg})`}
         return(
             <div className="drivering" style={driveringBg}>
+                <img src="" alt=""/>
                 <div className="bottom">
-                    <h6 onClick={this.fuck}>{this.state.title}</h6>
+                    <h6>{this.state.title}</h6>
                     <span className="time">{this.state.time}</span>
                     <p>当前费用:{this.state.total.toFixed(2)}元</p>
                     <span className="over" onClick={this.confirm}>{this.state.confirmevent}</span>

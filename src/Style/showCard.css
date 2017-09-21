@@ -1,10 +1,10 @@
 .showCard {
   width: 80%;
-  display: flex;
   margin: 0 auto;
   position: fixed;
   top: 0.72rem;
   left: 10%;
+  flex-direction: column;
 }
 .showCard .am-carousel-wrap-dot > span {
   width: 0.2rem;
@@ -17,24 +17,35 @@
 }
 .showCard .CardImg {
   width: 100%;
+  border-radius: 10px 10px 0 0;
 }
 .showCard h2 {
   font-size: 0.4rem;
   margin-top: 0.25rem;
 }
 .showCard p {
-  padding-top: 0.25rem;
   display: flex;
   display: block;
   margin: 0 auto;
   font-size: 0.26rem;
-  padding-bottom: 1.5rem;
   word-break: break-all;
   width: 90%;
   justify-content: center;
+}
+.showCard .CardItem .main {
+  padding-top: 0.5rem;
+}
+.showCard .CardItem p:last-child {
+  padding-bottom: 1.5rem;
 }
 .am-icon-md {
   width: 0.3rem !important;
   height: 0.3rem !important;
   color: white;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+}
+.showCard .am-carousel-wrap-dot > span {
+  width: 0.1rem !important;
+  height: 0.1rem !important;
 }

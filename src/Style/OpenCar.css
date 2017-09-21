@@ -38,10 +38,14 @@
   }
 }
 .open .OpenCarfooter {
-  font-size: 0.28rem;
+  font-size: 0.24rem;
   color: #999999;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+}
+.open .OpenCarfooter em {
+  font-style: normal;
 }
 .am-modal-title {
   font-size: 0.3rem !important;
@@ -51,7 +55,8 @@
   padding: 0 0.3rem 0.3rem !important;
   font-size: 0.28rem !important;
 }
-.am-modal-button-group-v .am-modal-button {
+.am-modal-button-group-v .am-modal-button,
+.am-modal-button-group-h .am-modal-button {
   line-height: 1rem !important;
   height: 1rem !important;
   font-size: 0.28rem !important;

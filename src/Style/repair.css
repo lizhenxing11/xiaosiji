@@ -1,0 +1,102 @@
+.am-modal-operation .am-modal-body,
+.am-modal-operation .am-modal-header {
+  padding: 0 !important;
+}
+.repair .Cardcode {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  height: 0.9rem;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  border: 0.005rem solid #cccccc;
+  margin-top: 0.3rem;
+  border-radius: 0.08rem;
+  font-size: 0.28rem;
+}
+.repair .Cardcode input {
+  border: none;
+  background-color: inherit;
+  width: 4.5rem;
+}
+.repair .Cardcode .iconfont {
+  color: #ff5e61;
+  font-size: 0.28rem;
+}
+.repair .question span {
+  font-size: 0.28rem;
+}
+.repair .question span:before,
+.repair .question span:after {
+  content: "———";
+  padding: 0.5rem;
+}
+.repair .question ol {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.repair .question ol li {
+  text-align: center;
+  line-height: 0.75rem;
+  width: 1.8rem;
+  height: 0.75rem;
+  margin: 0.25rem 0 0 0.25rem;
+  border-radius: 0.08rem;
+  border: 0.005rem solid #cccccc;
+}
+.repair .question ol .select {
+  border-color: #ff5e61;
+}
+.repair .question textarea {
+  width: 90%;
+  height: 2rem;
+  background-color: inherit;
+  margin-top: 0.3rem;
+  border-color: #cccccc;
+  border-radius: 0.08rem;
+  font-size: 0.28rem;
+  padding: 0.2rem;
+}
+.repair .chooseImg {
+  width: 90%;
+  margin: 0 auto;
+  height: 1.8rem;
+}
+.repair .chooseImg .imgnone {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.24rem;
+  color: #999999;
+  align-items: center;
+}
+.repair .chooseImg .imgnone span {
+  text-align: left;
+}
+.repair .chooseImg .imgnone img {
+  width: 0.8rem;
+  height: 0.65rem;
+  margin: 0.35rem;
+}
+.repair .chooseImg .img {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.repair .chooseImg .img img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.6rem;
+}
+.repair .submit {
+  width: 90%;
+  font-size: 0.28rem;
+  height: 0.9rem;
+  background-color: #ff5e61;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+}

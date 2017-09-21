@@ -122,7 +122,6 @@ class OpenCar extends Component{
                 if(this.state.countdown > 0){
                     let num = this.state.countdown-1
                     this.setState({countdown:num})
-                    console.log(num)
 
                 }else{
                     clearInterval(this.countdown)
@@ -155,7 +154,9 @@ class OpenCar extends Component{
                         <h5>{this.state.state}</h5>
                     </div>
                 </div>
-                <span className="OpenCarfooter" style={{display:this.state.success}}>{this.state.countdown}s后开始计费<br/>请检查车辆是否启动</span>
+                <span className="OpenCarfooter" style={{display:this.state.success}}>{this.state.countdown}s后开始计费
+                    <em style={{color:'red'}}>请拔掉充电器</em>检查车辆是否启动
+                </span>
             </div>
         )
     }

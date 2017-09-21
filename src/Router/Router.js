@@ -7,6 +7,7 @@ import PersonCenter from '../components/personCenter'
 import Drivering from '../components/drivering'
 import Driveover from '../components/driveover'
 import TraveList from '../components/travelList'
+import Repair from '../components/repair'
 
 
 class AppRouter extends React.Component{
@@ -21,6 +22,7 @@ class AppRouter extends React.Component{
                     <Route path="/drivering"  component={Drivering}></Route>
                     <Route path="/driveover"  component={Driveover}></Route>
                     <Route path="/travelList"  component={TraveList}></Route>
+                    <Route path="/repair"  component={Repair}></Route>
                 </Switch>
             </HashRouter>
         )

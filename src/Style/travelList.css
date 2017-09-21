@@ -1,6 +1,6 @@
 .TravelList {
   background-color: white;
-  height: 100%;
+  height: auto;
 }
 .TravelList .TravelListinner {
   padding-bottom: 0.3rem;

@@ -19,7 +19,19 @@ class OpenCar extends Component{
             countdown:60,
             success:"none"
         }
+        this.enterRepair=()=>{
+            axios({//取消订单
+                url:'/SmallCar/getRepaired.action?orderID='+this.state.orderID+'&carID='+this.state.carid ,
+                method:'get'
+            }).then((res)=>{
+                if(res.data.msg === 'success'){
+                    this.context.router.history.push('/repair')
+                }else{
+                    alert('订单未取消,请联系联系客服')
+                }
+            })
 
+        }
     }
     componentWillUnmount(){
         clearInterval(this.time)    // 清除计时器
@@ -154,8 +166,10 @@ class OpenCar extends Component{
                         <h5>{this.state.state}</h5>
                     </div>
                 </div>
-                <span className="OpenCarfooter" style={{display:this.state.success}}>{this.state.countdown}s后开始计费
-                    <em style={{color:'red'}}>请拔掉充电器</em>检查车辆是否启动
+                <span className="OpenCarfooter" style={{display:this.state.success}}>
+                    <em style={{color:'red'}}>请拔掉充电器</em>
+                    {this.state.countdown}s后开始计费
+                    <span style={{fontSize:'0.24rem',color:'#999999',display:'flex',flexDirection:'row',justifyContent:'center'}}>检查车辆是否启动,如有问题,&nbsp;&nbsp;<span style={{fontSize:'0.24rem',color:'green'}} onClick={this.enterRepair}>立即报修</span></span>
                 </span>
             </div>
         )

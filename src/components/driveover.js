@@ -6,7 +6,7 @@ class Driveover extends Component{
     constructor(props,context){
         super(...arguments)
         this.state={
-            total:'',
+            total:3.5,
             overTime:'',
             totalTime:'',
             carCode:''
@@ -17,9 +17,9 @@ class Driveover extends Component{
     }
     componentDidMount(){
         axios({
-            url:'',
+            url:'fasdfa',
             method:'post',
-            data:{id:this.props.location.query.orderID}
+            // data:{id:this.props.location.query.orderID}
         }).then((res)=>{
             this.setState({total:res,overTime:res,carCode:res,totalTime:res})
         })

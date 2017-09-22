@@ -13,7 +13,7 @@ export default class Repair extends Component{
             questionDetail:'',
             isLoggedIn:false,
             localId: [],
-            serverId: []
+            serverId: null
         }
         this.handdle=(event)=>{
             event.target.value=event.target.value.replace(/\D/g,'')
@@ -90,14 +90,14 @@ export default class Repair extends Component{
                 url:'/SmallCar/addRepair.action',
                 params:{carcode:this.state.cardCode,type:type.join(','),mediaIds:this.state.serverId,userid:this.state.ID,details:this.state.questionDetail}
             }).then((res)=>{
-                if(res.data){
+                if(res.data === 1){
                     Modal.alert("上报成功",<div><p style={{fontSize:'0.22rem'}}>工作人员正在审核</p><p style={{fontSize:'0.22rem'}}>一到三个工作日返回结果</p></div>,[
                         { text: '返回微信', onPress: () => {window.wx.closeWindow()} },
                         { text: '开始新行程', onPress: () => {this.context.router.history.push('/index')} }
                     ])
 
                 }else{
-                    alert('保修失败,请重试')
+                    alert('车辆不存在')
                 }
             })
         }

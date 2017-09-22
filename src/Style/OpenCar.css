@@ -60,4 +60,5 @@
   line-height: 1rem !important;
   height: 1rem !important;
   font-size: 0.28rem !important;
+  text-overflow: clip !important;
 }

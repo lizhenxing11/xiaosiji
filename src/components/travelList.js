@@ -40,7 +40,7 @@ class TravelList extends Component{
                                 </div>
                                 <span>车辆编号：{value.carCode}</span>
                                 <div className="bottom">
-                                    <span><i className="iconfont icon-qian"></i>花费：{value.amount}元</span>
+                                    <span><i className="iconfont icon-qian"></i>花费：{value.amount === null?value.amount:0}元</span>
                                     <span><i className="iconfont icon-shijian"></i>时间：{Math.ceil((value.total)/1000/60)}分钟</span>
                                 </div>
                             </div>

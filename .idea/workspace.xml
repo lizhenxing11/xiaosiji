@@ -2,20 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8737602c-c481-4ebd-a61c-a91476212064" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Style/repair.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/repair.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Router/Router.js" afterPath="$PROJECT_DIR$/src/Router/Router.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Style/OpenCar.css" afterPath="$PROJECT_DIR$/src/Style/OpenCar.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Style/OpenCar.less" afterPath="$PROJECT_DIR$/src/Style/OpenCar.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Style/showCard.css" afterPath="$PROJECT_DIR$/src/Style/showCard.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Style/showCard.less" afterPath="$PROJECT_DIR$/src/Style/showCard.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Style/travelList.css" afterPath="$PROJECT_DIR$/src/Style/travelList.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Style/travelList.less" afterPath="$PROJECT_DIR$/src/Style/travelList.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/OpenCar.js" afterPath="$PROJECT_DIR$/src/components/OpenCar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/driveover.js" afterPath="$PROJECT_DIR$/src/components/driveover.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/drivering.js" afterPath="$PROJECT_DIR$/src/components/drivering.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/index.js" afterPath="$PROJECT_DIR$/src/components/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/showCard.js" afterPath="$PROJECT_DIR$/src/components/showCard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/repair.js" afterPath="$PROJECT_DIR$/src/components/repair.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/travelList.js" afterPath="$PROJECT_DIR$/src/components/travelList.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -32,8 +26,8 @@
       <file leaf-file-name="repair.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Style/repair.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1597">
-              <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+            <state relative-caret-position="27">
+              <caret line="1" column="23" lean-forward="false" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
               <folding>
                 <element signature="e#1365#1632#0" expanded="false" />
               </folding>
@@ -41,11 +35,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="repair.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OpenCar.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/OpenCar.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="20" column="9" lean-forward="false" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="repair.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/repair.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+            <state relative-caret-position="351">
+              <caret line="105" column="50" lean-forward="false" selection-start-line="105" selection-start-column="50" selection-end-line="105" selection-end-column="50" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -53,61 +57,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="OpenCar.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Style/OpenCar.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="62" column="1" lean-forward="true" selection-start-line="62" selection-start-column="1" selection-end-line="62" selection-end-column="1" />
+            <state relative-caret-position="283">
+              <caret line="62" column="33" lean-forward="false" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="driveover.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/driveover.js">
+      <file leaf-file-name="travelList.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Style/travelList.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="21" />
+            <state relative-caret-position="28">
+              <caret line="13" column="20" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="drivering.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="drivering.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/drivering.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2453">
-              <caret line="111" column="28" lean-forward="false" selection-start-line="111" selection-start-column="28" selection-end-line="111" selection-end-column="28" />
+            <state relative-caret-position="544">
+              <caret line="111" column="29" lean-forward="false" selection-start-line="111" selection-start-column="29" selection-end-line="111" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OpenCar.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/OpenCar.js">
+      <file leaf-file-name="travelList.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/travelList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1647">
-              <caret line="157" column="65" lean-forward="false" selection-start-line="157" selection-start-column="65" selection-end-line="157" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="iconfont.css" pinned="false" current-in-tab="false">
-        <entry file="file://D:/工具包/font_400266_8yat0x0fnkhdunmi/iconfont.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="14" column="37" lean-forward="false" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+            <state relative-caret-position="1080">
+              <caret line="42" column="45" lean-forward="false" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -116,8 +100,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1296">
-              <caret line="122" column="25" lean-forward="true" selection-start-line="122" selection-start-column="25" selection-end-line="122" selection-end-column="25" />
+            <state relative-caret-position="-158">
+              <caret line="122" column="25" lean-forward="false" selection-start-line="122" selection-start-column="25" selection-end-line="122" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -135,8 +119,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>show</find>
-      <find>e.</find>
       <find>over</find>
       <find>total</find>
       <find>orderPay</find>
@@ -165,6 +147,8 @@
       <find>selecte</find>
       <find>onClose</find>
       <find>bind</find>
+      <find>exclude</find>
+      <find>exc</find>
     </findStrings>
     <replaceStrings>
       <replace>http://img2.3lian.com/img2007/24/03/015.jpg</replace>
@@ -183,7 +167,6 @@
         <option value="$PROJECT_DIR$/src/components/login.js" />
         <option value="$PROJECT_DIR$/src/components/login/login.less" />
         <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/Style/personCenter.js" />
         <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/index.css" />
@@ -194,19 +177,14 @@
         <option value="D:/工具包/nginx-1.10.2/conf/nginx.conf" />
         <option value="D:/工具包/nginx-1.13.4/conf/nginx.conf" />
         <option value="D:/nginx-1.13.4/conf/nginx.conf" />
-        <option value="$PROJECT_DIR$/node_modules/react-scripts/config/webpack.config.dev.js" />
-        <option value="$PROJECT_DIR$/node_modules/react-scripts/config/webpack.config.prod.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/build/index.html" />
-        <option value="$PROJECT_DIR$/src/components/driveover.js" />
         <option value="$PROJECT_DIR$/src/Style/login.less" />
         <option value="$USER_HOME$/Documents/WeChat Files/hx962464lzx/Files/新建文本文档(1).txt" />
         <option value="$PROJECT_DIR$/src/Style/index.less" />
         <option value="$PROJECT_DIR$/build/static/css/main.63e394d8.css" />
         <option value="$PROJECT_DIR$/build/static/css/main.d00b7273.css" />
         <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/src/components/travelList.js" />
-        <option value="$PROJECT_DIR$/src/components/OpenCar.js" />
         <option value="$USER_HOME$/Desktop/index.html" />
         <option value="$PROJECT_DIR$/src/Style/travelList.less" />
         <option value="$USER_HOME$/Documents/WeChat Files/hx962464lzx/Files/后台html/index.html" />
@@ -215,13 +193,19 @@
         <option value="$PROJECT_DIR$/src/components/showCard.js" />
         <option value="F:/xiaosijApp/lib/stylesheet.acss" />
         <option value="$PROJECT_DIR$/src/components/personCenter.js" />
-        <option value="$PROJECT_DIR$/src/Router/Router.js" />
         <option value="$PROJECT_DIR$/src/Style/repair.css" />
-        <option value="$PROJECT_DIR$/src/components/drivering.js" />
         <option value="$PROJECT_DIR$/src/Style/repair.less" />
-        <option value="$PROJECT_DIR$/src/Style/OpenCar.less" />
         <option value="$PROJECT_DIR$/src/components/index.js" />
+        <option value="$PROJECT_DIR$/src/Router/Router.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/node_modules/react-scripts/config/webpack.config.dev.js" />
+        <option value="$PROJECT_DIR$/node_modules/react-scripts/config/webpack.config.prod.js" />
+        <option value="$PROJECT_DIR$/src/components/driveover.js" />
         <option value="$PROJECT_DIR$/src/components/repair.js" />
+        <option value="$PROJECT_DIR$/src/Style/OpenCar.less" />
+        <option value="$PROJECT_DIR$/src/components/travelList.js" />
+        <option value="$PROJECT_DIR$/src/components/OpenCar.js" />
+        <option value="$PROJECT_DIR$/src/components/drivering.js" />
       </list>
     </option>
   </component>
@@ -243,7 +227,10 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -265,24 +252,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="xsjgx" type="b2602c69:ProjectViewProjectNode" />
               <item name="xsjgx" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xsjgx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xsjgx" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xsjgx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xsjgx" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xsjgx" type="b2602c69:ProjectViewProjectNode" />
@@ -299,54 +276,7 @@
               <item name="xsjgx" type="b2602c69:ProjectViewProjectNode" />
               <item name="xsjgx" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xsjgx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xsjgx" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Router" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xsjgx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xsjgx" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Style" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xsjgx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xsjgx" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Style" type="462c0819:PsiDirectoryNode" />
-              <item name="drivering.less" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="xsjgx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xsjgx" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Style" type="462c0819:PsiDirectoryNode" />
-              <item name="login.less" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="xsjgx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xsjgx" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Style" type="462c0819:PsiDirectoryNode" />
-              <item name="OpenCar.less" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="xsjgx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xsjgx" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Style" type="462c0819:PsiDirectoryNode" />
-              <item name="repair.less" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="xsjgx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xsjgx" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Style" type="462c0819:PsiDirectoryNode" />
-              <item name="showCard.less" type="620a8d5e:NestingTreeNode" />
             </path>
           </expand>
           <select />
@@ -418,24 +348,26 @@
       <workItem from="1505870838491" duration="17630000" />
       <workItem from="1505959276978" duration="290000" />
       <workItem from="1505960727753" duration="22045000" />
+      <workItem from="1506044097493" duration="959000" />
+      <workItem from="1506046576895" duration="11845000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="416140000" />
+    <option name="totallyTimeSpent" value="428944000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17019027" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18604651" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32503662" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2963801" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25678733" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -463,21 +395,12 @@
           <url>file://$PROJECT_DIR$/src/Router/Router.js</url>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/repair.js</url>
-          <line>23</line>
-          <properties />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
       </breakpoints>
       <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build/asset-manifest.json" />
-    <entry file="file://$PROJECT_DIR$/build/service-worker.js" />
-    <entry file="file://$PROJECT_DIR$/build/index.html" />
     <entry file="file://$PROJECT_DIR$/src/registerServiceWorker.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-21">
@@ -517,13 +440,6 @@
       </provider>
     </entry>
     <entry file="file://D:/工具包/Error log - PingFang ExtraLight.ttf.json" />
-    <entry file="file://$PROJECT_DIR$/src/Style/travelList.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="13" column="20" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Documents/WeChat Files/hx962464lzx/Files/后台html/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="334">
@@ -645,13 +561,7 @@
     </entry>
     <entry file="file://D:/工具包/stylesheet.css" />
     <entry file="file://F:/xiaosijApp/lib/stylesheet.css" />
-    <entry file="file://F:/xiaosijApp/lib/stylesheet.acss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-863">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://F:/xiaosijApp/lib/stylesheet.acss" />
     <entry file="file://$PROJECT_DIR$/src/Style/showCard.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
@@ -673,14 +583,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Router/Router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="9" column="40" lean-forward="false" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Style/repair.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -696,45 +598,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/travelList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="837">
-          <caret line="33" column="35" lean-forward="false" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/showCard.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
           <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/drivering.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2453">
-          <caret line="111" column="28" lean-forward="false" selection-start-line="111" selection-start-column="28" selection-end-line="111" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/OpenCar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1647">
-          <caret line="157" column="65" lean-forward="false" selection-start-line="157" selection-start-column="65" selection-end-line="157" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Style/repair.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1597">
-          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-          <folding>
-            <element signature="e#1365#1632#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -742,7 +609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -750,49 +616,126 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1701">
           <caret line="63" column="26" lean-forward="false" selection-start-line="63" selection-start-column="26" selection-end-line="63" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-scripts/config/webpack.config.dev.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="168" column="41" lean-forward="true" selection-start-line="168" selection-start-column="41" selection-end-line="168" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-scripts/config/webpack.config.prod.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="171" column="22" lean-forward="true" selection-start-line="171" selection-start-column="22" selection-end-line="171" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/driveover.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Style/OpenCar.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="62" column="1" lean-forward="true" selection-start-line="62" selection-start-column="1" selection-end-line="62" selection-end-column="1" />
+        <state relative-caret-position="1107">
+          <caret line="43" column="24" lean-forward="true" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
+        <state relative-caret-position="216">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Router/Router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="22" column="43" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#25#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1296">
-          <caret line="122" column="25" lean-forward="true" selection-start-line="122" selection-start-column="25" selection-end-line="122" selection-end-column="25" />
+        <state relative-caret-position="-158">
+          <caret line="122" column="25" lean-forward="false" selection-start-line="122" selection-start-column="25" selection-end-line="122" selection-end-column="25" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Style/repair.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="23" lean-forward="false" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+          <folding>
+            <element signature="e#1365#1632#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/repair.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        <state relative-caret-position="351">
+          <caret line="105" column="50" lean-forward="false" selection-start-line="105" selection-start-column="50" selection-end-line="105" selection-end-column="50" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Style/OpenCar.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="62" column="33" lean-forward="false" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Style/travelList.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="13" column="20" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/travelList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="42" column="45" lean-forward="false" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/OpenCar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="20" column="9" lean-forward="false" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/drivering.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="111" column="29" lean-forward="false" selection-start-line="111" selection-start-column="29" selection-end-line="111" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
